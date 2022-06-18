@@ -43,3 +43,11 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   background-color: #f8f3ed; }
+
+.title {
+  font-family: "Prata", sans-serif; }
+
+.title {
+  font-weight: 400;
+  font-size: 82px;
+  line-height: calc(81 / 82); }
