@@ -1,8 +1,9 @@
 @import "reset";
 @import "variables";
 @import "global";
-.title {
-  font-weight: 400;
-  font-size: 82px;
-  line-height: calc(81 / 82);
-}
+@import "header";
+@import "about";
+@import "projects";
+@import "designers";
+@import "articles";
+@import "footer";

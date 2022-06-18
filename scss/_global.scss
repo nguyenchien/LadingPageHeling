@@ -1,9 +1,42 @@
 body {
-  line-height: 1.5;
   font-family: $primay-font;
   font-size: 18px;
   background-color: $primay-color;
+  color: $secondary-color;
 }
-.title {
+.wrapper {
+  max-width: $wrapper-width;
+  margin: 0 auto;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.heading {
   font-family: $secondary-font;
+  font-weight: 400;
+  color: $secondary-color;
+  &--big {
+    font-size: 70px;
+    line-height: calc(76 / 70);
+  }
+  &--small {
+    font-size: 52px;
+    line-height: calc(61 / 52);
+  }
+}
+.text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(34 / 24);
+  color: rgba(34, 33, 32, 0.7);
+}
+.text-link {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  color: $secondary-color;
+  letter-spacing: -0.3px;
 }

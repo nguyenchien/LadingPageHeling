@@ -1,0 +1,112 @@
+.header {
+  background-color: $secondary-color;
+  margin-bottom: 258px;
+  &__top {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    &-link {
+      font-weight: 400;
+      line-height: calc(30 / 18);
+      color: $grayfa;
+      opacity: 0.4;
+      text-decoration: none;
+      text-transform: lowercase;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: transparent;
+        margin-right: 10px;
+        transition: all 0.25s linear;
+      }
+      &:hover {
+        color: $grayfa;
+        opacity: 1;
+        &::before {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  &__contact {
+    color: white;
+  }
+  &__line {
+    margin-bottom: 102px;
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 32px;
+    position: relative;
+  }
+  &__content {
+    max-width: 724px;
+    flex: 1;
+  }
+  &__heading {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: calc(81 / 82);
+    letter-spacing: -2.5px;
+    color: $grayfa;
+    margin-bottom: 68px;
+    span {
+      display: block;
+    }
+    span:nth-child(2),
+    span:nth-child(3) {
+      padding-left: 145px;
+    }
+  }
+  &__line2 {
+    margin-bottom: 47px;
+    transform: translateX(246px);
+  }
+  &__text {
+    max-width: 397px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: rgba(255, 255, 255, 0.6);
+    transform: translateX(246px);
+  }
+  &__image {
+    flex-shrink: 0;
+    &--small {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateY(78px);
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    .menu {
+      display: none;
+    }
+    &__top {
+      height: 105px;
+    }
+    &__line {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

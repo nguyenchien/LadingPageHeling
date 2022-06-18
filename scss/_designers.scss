@@ -1,0 +1,28 @@
+.designers {
+  background-color: $secondary-color;
+  padding-top: 160px;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 40px;
+  }
+  &__content {
+    max-width: 616px;
+  }
+  &__image {
+    flex-shrink: 0;
+  }
+  &__heading {
+    color: $primay-color;
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: $primay-color;
+    margin-bottom: 25px;
+  }
+  &__link {
+    color: $primay-color;
+    margin-top: 15px;
+  }
+}

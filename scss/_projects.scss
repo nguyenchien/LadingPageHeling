@@ -1,0 +1,42 @@
+.projects {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .container {
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 65px;
+  }
+  &__image {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: calc(62 / 50);
+    color: $primay-color;
+    margin-bottom: 10px;
+  }
+  &__link {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(30 / 24);
+    color: $primay-color;
+  }
+}
