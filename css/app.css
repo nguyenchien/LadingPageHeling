@@ -45,6 +45,9 @@ li {
 a {
   display: inline-block; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
