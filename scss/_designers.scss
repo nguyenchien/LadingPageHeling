@@ -25,4 +25,21 @@
     color: $primay-color;
     margin-top: 15px;
   }
+
+  @media screen and (max-width: 767.98px) {
+    padding-top: 120px;
+    &__main {
+      flex-direction: column;
+      gap: 70px 0;
+    }
+    &__heading {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__link {
+      margin-top: 20px;
+    }
+  }
 }
